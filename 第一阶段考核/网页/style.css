@@ -1,0 +1,189 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* 首页横幅样式 */
+.home-section {
+    height: 100vh;
+    background-color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#scrollBtn {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollBtn:hover {
+    background-color: #1e90ff;
+}
+
+/* 通用区块样式 */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #4169e1;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* 关于我样式 */
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid #4169e1;
+}
+
+.about-content p {
+    max-width: 600px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 技能样式 */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: #4169e1;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+/* 联系方式样式 */
+.contact-section {
+    background-color: #f0f8ff;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #1e90ff;
+}
+
+/* 响应式适配手机 */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .skill-item {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
